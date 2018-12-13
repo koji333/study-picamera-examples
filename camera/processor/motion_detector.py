@@ -54,6 +54,5 @@ class MotionDetector(object):
             cv2.rectangle(frame, (x, y), (x + w, y + h), (0, 0, 255), 2)
             # cv2.putText(img, text, org, fontFace, fontScale, color[, thickness[, lineType[, bottomLeftOrigin]]])
             font = cv2.FONT_HERSHEY_SIMPLEX
-            # cv2.putText(frame,'OpenCV',(10,500), font, 4,(255,255,255),2,cv2.LINE_AA)
-             cv2.putText(frame,'OpenCV',(10,500), font, 4,(255,255,255))
+            cv2.putText(frame,'OpenCV',(10,500), font, 4,(255,255,255),2,cv2.LINE_AA)
         return frame
